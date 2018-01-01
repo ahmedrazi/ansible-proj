@@ -1,0 +1,8 @@
+---
+  - hosts: 192.168.1.187
+    
+    tasks:
+      - name: echo loop items
+        command: echo {{ item}}
+        with items: ['r1','r2','r3','r4','r5']
+

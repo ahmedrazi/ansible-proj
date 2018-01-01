@@ -1,0 +1,4 @@
+---
+ .tasks:
+  - name: Change  password
+    user: name=rahmed update_password=always password="$6$oDv5W/Xa.7BG196X$NOtIauN0ZhPCXWAmE4WPcFYAXuqEpKNond1PwBr/17RCnu8gC3lNqjL82ZfJ3yBNmzdyLPyP2OZkeKroVbJOO"

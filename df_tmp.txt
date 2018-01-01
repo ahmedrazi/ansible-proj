@@ -1,0 +1,13 @@
+Filesystem              512-blocks       Used Available Capacity    iused               ifree %iused  Mounted on
+/dev/disk1s1             488555536  460763648  20177104    96%    3031701 9223372036851744106    0%   /
+devfs                          412        412         0   100%        714                   0  100%   /dev
+/dev/disk1s4             488555536    6293160  20177104    24%          3 9223372036854775804    0%   /private/var/vm
+map -hosts                       0          0         0   100%          0                   0  100%   /net
+map auto_home                    0          0         0   100%          0                   0  100%   /home
+//admin@mydisk/vms      3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/vms
+//admin@mydisk/mynotes  3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/mynotes
+//admin@mydisk/kids     3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/kids
+//admin@mydisk/share    3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/share
+//admin@mydisk/macos    3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/macos
+//admin@mydisk/personal 3876362752 3619375512 256987240    94% 1809687754           128493620   93%   /Volumes/personal
+//admin@mydisk/info        9843320    2345064   7498256    24%    1172530             3749128   24%   /Volumes/info

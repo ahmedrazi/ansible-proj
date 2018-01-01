@@ -1,0 +1,96 @@
+CDP Info:
+
+{
+    "ansible_facts": {
+        "neighbors": [
+            {
+                "local_interface": "Ethernet2/1", 
+                "neighbor": "NX-OSv1(TB3E7EC28AB)", 
+                "neighbor_interface": "Ethernet2/1"
+            }, 
+            {
+                "local_interface": "Ethernet2/2", 
+                "neighbor": "NX-OSv4(TB3E147A25B)", 
+                "neighbor_interface": "Ethernet2/1"
+            }
+        ]
+    }, 
+    "changed": false
+}
+
+Route Info:
+
+{
+    "changed": false, 
+    "commands": "show ip route vrf management", 
+    "proposed": {
+        "cmd_type": "show", 
+        "commands": "show ip route vrf management", 
+        "text": null
+    }, 
+    "response": [
+        {
+            "body": {
+                "TABLE_vrf": {
+                    "ROW_vrf": {
+                        "TABLE_addrf": {
+                            "ROW_addrf": {
+                                "TABLE_prefix": {
+                                    "ROW_prefix": [
+                                        {
+                                            "TABLE_path": {
+                                                "ROW_path": {
+                                                    "clientname": "direct", 
+                                                    "hidden": "false", 
+                                                    "ifname": "mgmt0", 
+                                                    "ipnexthop": "198.18.1.101", 
+                                                    "metric": "0", 
+                                                    "pref": "0", 
+                                                    "stale": "false", 
+                                                    "stale-label": "false", 
+                                                    "ubest": "true", 
+                                                    "unres": "false", 
+                                                    "uptime": "PT5M40S"
+                                                }
+                                            }, 
+                                            "attached": "true", 
+                                            "ipprefix": "198.18.1.0/24", 
+                                            "mcast-nhops": "0", 
+                                            "ucast-nhops": "1"
+                                        }, 
+                                        {
+                                            "TABLE_path": {
+                                                "ROW_path": {
+                                                    "clientname": "local", 
+                                                    "hidden": "false", 
+                                                    "ifname": "mgmt0", 
+                                                    "ipnexthop": "198.18.1.101", 
+                                                    "metric": "0", 
+                                                    "pref": "0", 
+                                                    "stale": "false", 
+                                                    "stale-label": "false", 
+                                                    "ubest": "true", 
+                                                    "unres": "false", 
+                                                    "uptime": "PT5M40S"
+                                                }
+                                            }, 
+                                            "attached": "true", 
+                                            "ipprefix": "198.18.1.101/32", 
+                                            "mcast-nhops": "0", 
+                                            "ucast-nhops": "1"
+                                        }
+                                    ]
+                                }, 
+                                "addrf": "ipv4"
+                            }
+                        }, 
+                        "vrf-name-out": "management"
+                    }
+                }
+            }, 
+            "code": "200", 
+            "input": "show ip route vrf management", 
+            "msg": "Success"
+        }
+    ]
+}

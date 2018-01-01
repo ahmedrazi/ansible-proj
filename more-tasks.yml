@@ -1,0 +1,8 @@
+---
+  - name: include task 1 
+    debug:
+      msg: "I am not include"
+      
+  - name: include task 2
+    debug:
+      msg: "I am the second included task"

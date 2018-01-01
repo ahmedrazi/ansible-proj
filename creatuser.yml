@@ -1,0 +1,15 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+  - name: Ansible create user example.
+    user:
+      name: test1
+      group: wheel
+      state: present
+      password: $6$OZ7vWeVErmjLRQBn$IhVuj2pfAasdpaSKPT6GDcCU5uizN4oyKcDm2gjtGFo5Uvmh7cj9f5wNMvu4UYe4SsR21r8J8yHtQG8O3oP3j
+    
+      name: jsmith
+      generate_ssh_key: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
